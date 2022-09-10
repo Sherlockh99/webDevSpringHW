@@ -27,14 +27,14 @@ public class ProductServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-
-
         String pathInfo = request.getPathInfo();
-        String contextPath = request.getContextPath();
+
 /*
+        String contextPath = request.getContextPath();
         response.getWriter().println("<p>request.getPathInfo(): " + pathInfo + "</p>");
         response.getWriter().println("<p>request.getContextPath(): " + contextPath + "</p>");
 */
+
         PrintWriter writer = response.getWriter();
 
         if(request.getPathInfo() == null) {
